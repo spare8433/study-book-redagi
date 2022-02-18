@@ -1,8 +1,10 @@
 import { useState, useCallback, useMemo } from "react"
-import { UseMemoUseCallback }  from "./useMemo_useCallback"
+import { Practice }  from "./practice"
 
 
-const Ch8_hook = () => {
+const UseMemoUseCallback = () => {
+
+  // useMemo, useCallback 함수 이슈 (useMemo_useCallback.js)
   const [number, setNumber] = useState(1)
   
   const getItems_useCallback = useCallback(() => {
@@ -21,13 +23,15 @@ const Ch8_hook = () => {
     setNumber(e.target.value);
   }
 
+  //
+
   return (
     <div>
       <input value={number} onChange={handleChange}></input>
       {/* <button onClick={handleClick}></button> */}
 
-      <UseMemoUseCallback getItems_useCallback={getItems_useCallback} getItems_useMemo={getItems_useMemo} />
+      <Practice getItems_useCallback={getItems_useCallback} getItems_useMemo={getItems_useMemo} />
     </div>
   )
 }
-export default Ch8_hook;
+export default UseMemoUseCallback;

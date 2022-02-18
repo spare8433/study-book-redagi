@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const UseMemoUseCallback = ({ getItems_useCallback, getItems_useMemo }) => {
+export const Practice = ({ getItems_useCallback, getItems_useMemo }) => {
 
   const result_useCallback= getItems_useCallback
 
