@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 const Home = lazy(() => import('./home'));
 const UseMemoUseCallback = lazy(() => import('./useMemo_useCallback'));
 const CleanupFunction = lazy(() => import('./cleanupFunction'));
+const FunctionalUpdate = lazy(() => import('./functionalUpdate'));
+const Test = lazy(() => import('./test'));
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
             <Route path="/" element={<Home />} />                                                     
             <Route path="/1" element={<UseMemoUseCallback />} />
             <Route path="/2" element={<CleanupFunction />} />
+            <Route path="/3" element={<FunctionalUpdate />} />
+            <Route path="/test" element={<Test />} />
           </Routes>
         </Suspense>   
       </Router>      
